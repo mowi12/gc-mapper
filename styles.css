@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial;
+
+  header {
+    h1 {
+      text-align: center;
+    }
+  }
+
+  #input {
+    margin: 10px;
+    text-align: center;
+  }
+
+  #map {
+    width: 100vw;
+    height: 80vh;
+  }
+}
