@@ -78,7 +78,11 @@ function showRect(lat1, lng1, lat2, lng2) {
 
 function clearResults() {
   map.eachLayer((layer) => {
-    if (layer instanceof L.Marker || layer instanceof L.Rectangle) {
+    if (
+      layer instanceof L.Marker ||
+      layer instanceof L.Polyline ||
+      layer instanceof L.Rectangle
+    ) {
       map.removeLayer(layer);
     }
   });
