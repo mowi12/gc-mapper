@@ -1,29 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-  <link rel="stylesheet" href="styles.css">
-  <title>GC Mapper</title>
-</head>
-<body>
-  <header>
-    <h1>GC Mapper</h1>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>GC Mapper</title>
+  </head>
+  <body>
+    <header>
+      <h1>GC Mapper</h1>
+    </header>
 
-  <section id="input">
-    <label>Coords:</label>
-    <input id="latInput"/>
-    <input id="lngInput"/>
-    <button onclick="show()">Map!</button>
-  </section>
+    <section id="input">
+      <label>Coords:</label>
+      <input id="latInput" />
+      <input id="lngInput" />
+      <button onclick="show()">Map!</button>
+    </section>
 
-  <section>
-    <div id="map"></div>
-  </section>
+    <section>
+      <div id="map"></div>
+    </section>
 
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
-  <script src="script.js"></script>
-</body>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
