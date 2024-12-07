@@ -11,11 +11,42 @@ body {
 
   #input {
     margin: 10px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
   }
 
   #map {
     width: 100vw;
     height: 80vh;
   }
+}
+
+.info-icon {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 22px;
+  color: #007bff;
+}
+
+.info-icon:hover .hover-text {
+  display: block;
+}
+
+.hover-text {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  white-space: nowrap;
+  z-index: 1000;
+  font-size: 14px;
+  text-align: center;
 }
