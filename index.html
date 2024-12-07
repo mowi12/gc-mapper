@@ -17,15 +17,18 @@
 
     <section id="input">
       <label>Coords:</label>
-      <input id="coordInput" />
+      <input id="coordInput" placeholder="N 48° 23.a5b' E 9° 59.0c9'" />
       <button onclick="show()">Map!</button>
       <div class="info-icon">
         ℹ️
         <div class="hover-text">
+          !! Currently no duplicate variables allowed and only a max. of 3 !!<br />
+          <br />
           Format: N XXX° XX.XXX' E YYY° YY.YYY'<br />
           (With or without ° and ')<br />
-          Example: N 48° 51.000' E 2° 17.000'<br />
-          Example with variables: N 48° 51.x4x' E 2° 17.4xx'
+          Example: N 48° 23.916' E 9° 59.535'<br />
+          Example with variables: N 48° 23.91a' E 10° 00.b0c'<br />
+          Supported variables: 'a' to 'z'
         </div>
       </div>
     </section>
