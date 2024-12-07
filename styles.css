@@ -15,6 +15,10 @@ body {
     justify-content: center;
     align-items: center;
     gap: 10px;
+
+    #coordInput {
+      width: 250px;
+    }
   }
 
   #map {
