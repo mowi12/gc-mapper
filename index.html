@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>GC Mapper</title>
+  </head>
+  <body>
+    <header>
+      <h1>GC Mapper</h1>
+    </header>
+
+    <section id="input">
+      <label>Coords:</label>
+      <input id="coordInput" />
+      <button onclick="show()">Map!</button>
+      <div class="info-icon">
+        ℹ️
+        <div class="hover-text">
+          Format: N XXX° XX.XXX' E YYY° YY.YYY'<br />
+          (With or without ° and ')<br />
+          Example: N 48° 51.000' E 2° 17.000'<br />
+          Example with variables: N 48° 51.x4x' E 2° 17.4xx'
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="map"></div>
+    </section>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
